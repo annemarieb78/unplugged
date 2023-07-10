@@ -156,6 +156,7 @@ header {
   display: flex;
   justify-content: center;
   padding: 15px 0 10px 0;
+  background: #202322;
 }
 
 header .content-wrapper {
@@ -196,6 +197,33 @@ header nav ul {
 aside {
   display: flex;
   justify-content: center;
+  background: #527158;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type="button"] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .features {
@@ -235,6 +263,7 @@ aside {
 .reviews {
   display: flex;
   justify-content: center;
+  background: #2a423a;
 }
 
 .reviews h2 {
@@ -251,6 +280,7 @@ footer {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background: #202322;
 }
 
 footer .content-wrapper {
@@ -281,6 +311,7 @@ footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background: #527158;
 }
 
 footer .social-icons p {
@@ -308,6 +339,7 @@ About page
 .mission {
   display: flex;
   justify-content: center;
+  background: #527158;
 }
 
 .map {
@@ -318,6 +350,7 @@ About page
 .contact-section {
   display: flex;
   justify-content: center;
+  background: #2a423a;
 }
 
 /*==========================================================================
@@ -327,6 +360,7 @@ FAQ page
 .faq {
   display: flex;
   justify-content: center;
+  background: #527158;
 }
 
 .faq .content-wrapper {
@@ -334,7 +368,6 @@ FAQ page
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
-
   width: 90%;
 }
 
@@ -441,6 +474,21 @@ FAQ page
 
 @media only screen and (min-width: 768px) {
   /*Tablet styles here*/
+  h1 {
+    font-size: 3em;
+    line-height: 3em;
+  }
+
+  h2 {
+    font-size: 2.25em;
+    line-height: 3em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.875em;
+  }
+
   .content-wrapper {
     max-width: 640px;
     margin: 100px 0;
@@ -500,6 +548,14 @@ FAQ page
     width: 49%;
   }
 
+  footer {
+    font-size: 1.5em;
+  }
+
+  footer p {
+    line-height: 1.125em;
+  }
+
   footer .content-wrapper {
     width: 65%;
   }
@@ -552,10 +608,34 @@ FAQ page
   .faq h2 {
     width: 100%;
   }
+
+  .faq h4,
+  .faq p {
+    font-size: 0.875em;
+    line-height: 0.984375em;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
   /*Desktop styles here*/
+  h1 {
+    font-size: 3.75em;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.875em;
+  }
+
+  p {
+    font-size: 1.125em;
+    line-height: 1.5em;
+  }
+
   .content-wrapper {
     max-width: 960px;
   }
@@ -594,9 +674,19 @@ FAQ page
     width: 95%;
   }
 
+  .mission h2 {
+    font-size: 3em;
+  }
+
   /*FAQ page*/
   .faq h2 {
     width: 100%;
+    font-size: 3em;
+  }
+
+  .faq h4 {
+    font-size: 1.125em;
+    line-height: 1.125em;
   }
 }
 
