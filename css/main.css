@@ -109,7 +109,7 @@ a {
   text-decoration: none;
 }
 
-h1 {
+main h1 {
   font-size: 2.25em;
   line-height: 2.6875em;
   font-weight: 500;
@@ -195,6 +195,7 @@ header nav ul {
   justify-content: center;
   background: url(../img/unplugged-retreat.jpg) center, no-repeat, #333;
   background-size: cover;
+  min-height: 500px;
 }
 
 aside {
@@ -263,6 +264,12 @@ input[type="button"] {
 
 .features p {
   margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.features i {
+  font-size: 3.75em;
 }
 
 .reviews {
@@ -506,7 +513,7 @@ FAQ page
 
 @media only screen and (min-width: 768px) {
   /*Tablet styles here*/
-  h1 {
+  main h1 {
     font-size: 3em;
     line-height: 3em;
   }
@@ -549,6 +556,10 @@ FAQ page
 
   header nav ul {
     justify-content: space-between;
+  }
+
+  .hero-area {
+    min-height: 600px;
   }
 
   aside .content-wrapper {
@@ -664,7 +675,7 @@ FAQ page
 
 @media only screen and (min-width: 1200px) {
   /*Desktop styles here*/
-  h1 {
+  main h1 {
     font-size: 3.75em;
   }
 
@@ -722,6 +733,10 @@ FAQ page
 
   .mission h2 {
     font-size: 3em;
+  }
+
+  .map figure {
+    padding-bottom: 37.5%;
   }
 
   /*FAQ page*/
