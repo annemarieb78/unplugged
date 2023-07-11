@@ -195,7 +195,6 @@ header nav ul {
   justify-content: center;
   background: url(../img/unplugged-retreat.jpg) center, no-repeat, #333;
   background-size: cover;
-
 }
 
 aside {
@@ -313,7 +312,7 @@ footer .contact h4 {
   padding: 20px 0;
 }
 
-footer .contact-content p {
+footer .contact p {
   margin: 0;
 }
 
@@ -363,6 +362,21 @@ About page
 .map {
   display: flex;
   justify-content: center;
+}
+
+.map figure {
+  position: relative;
+  padding-bottom: 125%;
+  height: 0;
+  overflow: hidden;
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .contact-section {
