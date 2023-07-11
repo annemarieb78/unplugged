@@ -95,6 +95,7 @@ html {
 body {
   font-family: "open sans", sans-serif;
   font-size: 1em;
+  color: #e2e3ed;
 }
 
 ul,
@@ -108,10 +109,17 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 2.25em;
+  line-height: 2.6875em;
+  font-weight: 500;
+}
+
 h2 {
   font-family: "Poppins", sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  margin: 0;
 }
 
 h3,
@@ -127,9 +135,11 @@ p {
 }
 
 img {
+  width: 100%;
 }
 
 figure {
+  margin: 0;
 }
 
 address {
@@ -137,19 +147,9 @@ address {
 }
 
 .content-wrapper {
-  outline: 3px dotted red;
+  /*outline: 3px dotted red;*/
   width: 90%;
   margin: 50px 0;
-}
-
-h1 {
-  font-size: 2.25em;
-  line-height: 2.6875em;
-  font-weight: 500;
-}
-
-h2 {
-  margin: 0;
 }
 
 header {
@@ -168,7 +168,7 @@ header .content-wrapper {
 }
 
 header figure {
-  margin: 0;
+  width: 60%;
 }
 
 .header-divider {
@@ -187,11 +187,15 @@ header nav ul {
   justify-content: space-around;
   width: 100%;
   margin: 0;
+  list-style: none;
 }
 
 .hero-area {
   display: flex;
   justify-content: center;
+  background: url(../img/unplugged-retreat.jpg) center, no-repeat, #333;
+  background-size: cover;
+
 }
 
 aside {
@@ -229,6 +233,8 @@ input[type="button"] {
 .features {
   display: flex;
   justify-content: center;
+  background: url(../img/unplugged-retreat-features.jpg) center, no-repeat;
+  background-size: cover;
 }
 
 .features h2 {
@@ -266,13 +272,25 @@ input[type="button"] {
   background: #2a423a;
 }
 
+.reviews article {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 40px;
+}
+
 .reviews h2 {
   line-height: 1.875em;
 }
 
 .reviews h3 {
-  width: 55%;
-  padding: 20px 0;
+  width: 100%;
+  margin: 0;
+  line-height: 1.5em;
+}
+
+.reviews figure {
+  width: 100%;
 }
 
 footer {
@@ -507,6 +525,10 @@ FAQ page
     display: none;
   }
 
+  header figure {
+    width: 30%;
+  }
+
   header nav {
     width: 20%;
   }
@@ -542,10 +564,16 @@ FAQ page
   .reviews article {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
   }
 
   .reviews article div {
     width: 49%;
+  }
+
+  .reviews figure {
+    width: 45%;
   }
 
   footer {
