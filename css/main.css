@@ -109,12 +109,6 @@ a {
   text-decoration: none;
 }
 
-main h1 {
-  font-size: 2.25em;
-  line-height: 2.6875em;
-  font-weight: 500;
-}
-
 h2 {
   font-family: "Poppins", sans-serif;
   font-size: 1.875em;
@@ -184,7 +178,8 @@ header nav {
 
 header nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-left: 0%;
   width: 100%;
   margin: 0;
   list-style: none;
@@ -196,6 +191,12 @@ header nav ul {
   background: url(../img/unplugged-retreat.jpg) center, no-repeat, #333;
   background-size: cover;
   min-height: 500px;
+}
+
+.hero-area h1 {
+  font-size: 2.25em;
+  line-height: 1em;
+  font-weight: 500;
 }
 
 aside {
@@ -285,14 +286,10 @@ input[type="button"] {
   padding-top: 40px;
 }
 
-.reviews h2 {
-  line-height: 1.875em;
-}
-
 .reviews h3 {
   width: 100%;
   margin: 0;
-  line-height: 1.5em;
+  line-height: 1.25em;
   padding-top: 40px;
 }
 
@@ -336,6 +333,7 @@ footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding-left: 10%;
 }
 
 footer .social-icons p {
@@ -513,19 +511,15 @@ FAQ page
 
 @media only screen and (min-width: 768px) {
   /*Tablet styles here*/
-  main h1 {
-    font-size: 3em;
-    line-height: 3em;
-  }
 
   h2 {
     font-size: 2.25em;
-    line-height: 3em;
+    line-height: 1em;
   }
 
   h3 {
     font-size: 1.5em;
-    line-height: 1.875em;
+    line-height: 1em;
   }
 
   .content-wrapper {
@@ -551,15 +545,16 @@ FAQ page
   }
 
   header nav {
-    width: 20%;
-  }
-
-  header nav ul {
-    justify-content: space-between;
+    width: 40%;
   }
 
   .hero-area {
     min-height: 600px;
+  }
+
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1em;
   }
 
   aside .content-wrapper {
@@ -628,8 +623,12 @@ FAQ page
   }
 
   footer .social {
-    width: 30%;
+    width: 40%;
     margin-top: 50px;
+  }
+
+  footer .social-icons {
+    padding-left: 15%;
   }
 
   footer .copyright {
@@ -684,9 +683,6 @@ FAQ page
 
 @media only screen and (min-width: 1200px) {
   /*Desktop styles here*/
-  main h1 {
-    font-size: 3.75em;
-  }
 
   h2 {
     font-size: 2.25em;
@@ -709,8 +705,14 @@ FAQ page
     padding: 15px 0;
   }
 
+  header nav {
+    width: 20%;
+  }
+
   .hero-area h1 {
     width: 80%;
+    font-size: 3.75em;
+    line-height: 1em;
   }
 
   aside .content-wrapper {
