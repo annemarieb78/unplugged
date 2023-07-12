@@ -293,6 +293,7 @@ input[type="button"] {
   width: 100%;
   margin: 0;
   line-height: 1.5em;
+  padding-top: 40px;
 }
 
 .reviews figure {
@@ -335,17 +336,21 @@ footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: #527158;
 }
 
 footer .social-icons p {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
-footer .social-icons p a {
-  size: 1.3125em;
+footer .social-icons p i {
+  background: #527158;
+  font-size: 1.3125em;
+  border-radius: 100%;
+  width: 1.5em;
+  height: 1em;
+  padding: 15%;
 }
 
 footer .copyright {
@@ -364,11 +369,6 @@ About page
   display: flex;
   justify-content: center;
   background: #527158;
-}
-
-.map {
-  display: flex;
-  justify-content: center;
 }
 
 .map figure {
@@ -601,6 +601,10 @@ FAQ page
     width: 45%;
   }
 
+  .reviews h3 {
+    padding-top: 0;
+  }
+
   footer {
     font-size: 1.5em;
   }
@@ -621,6 +625,11 @@ FAQ page
 
   footer .contact {
     margin-bottom: 0;
+  }
+
+  footer .social {
+    width: 30%;
+    margin-top: 50px;
   }
 
   footer .copyright {
