@@ -331,9 +331,8 @@ footer .social h4 {
 
 footer .social-icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding-left: 10%;
 }
 
 footer .social-icons p {
@@ -625,10 +624,6 @@ FAQ page
   footer .social {
     width: 40%;
     margin-top: 50px;
-  }
-
-  footer .social-icons {
-    padding-left: 15%;
   }
 
   footer .copyright {
